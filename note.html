@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-22 一 23:13 -->
+<!-- 2021-03-23 二 22:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>C++</title>
@@ -269,17 +269,36 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8b4eda4">1. C++入门</a>
+<li><a href="#orgd753f32">1. C++入门</a>
 <ul>
-<li><a href="#orgd223c2e">1.1. C++初识</a>
+<li><a href="#orgc2af237">1.1. C++初识</a>
 <ul>
-<li><a href="#orga6c0734">1.1.1. 常量</a></li>
+<li><a href="#orgbe4b6ee">1.1.1. 常量</a></li>
 </ul>
 </li>
-<li><a href="#org06cac0a">1.2. 数据类型</a>
+<li><a href="#org49274e1">1.2. 数据类型</a>
 <ul>
-<li><a href="#org2e027c3">1.2.1. 整型:表示整数类型,不同区别是占用的内存空间不同</a></li>
-<li><a href="#org66377ec">1.2.2. sizeof关键字</a></li>
+<li><a href="#org026d42c">1.2.1. 整型:表示整数类型,不同区别是占用的内存空间不同</a></li>
+<li><a href="#org3dbbfbf">1.2.2. sizeof关键字</a></li>
+<li><a href="#org9e96f90">1.2.3. 实型</a></li>
+<li><a href="#org3ad6393">1.2.4. 字符型</a></li>
+<li><a href="#org3a0381f">1.2.5. 转义字符</a></li>
+<li><a href="#orgdf84a22">1.2.6. 字符串型</a></li>
+<li><a href="#org4cf6cb4">1.2.7. 布尔类型 bool</a></li>
+<li><a href="#orgbacade5">1.2.8. 数据输入</a></li>
+</ul>
+</li>
+<li><a href="#orga61eeba">1.3. 运算符</a>
+<ul>
+<li><a href="#orgcb7ddb6">1.3.1. 算术</a></li>
+<li><a href="#org0ae6120">1.3.2. 赋值运算符</a></li>
+<li><a href="#org4046c7b">1.3.3. 比较运算符</a></li>
+<li><a href="#orga44ad6e">1.3.4. 逻辑运算符</a></li>
+</ul>
+</li>
+<li><a href="#orgd63f307">1.4. 程序流程结构</a>
+<ul>
+<li><a href="#org99fea5d">1.4.1. 选择结构</a></li>
 </ul>
 </li>
 </ul>
@@ -287,16 +306,16 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org8b4eda4" class="outline-2">
-<h2 id="org8b4eda4"><span class="section-number-2">1</span> C++入门</h2>
+<div id="outline-container-orgd753f32" class="outline-2">
+<h2 id="orgd753f32"><span class="section-number-2">1</span> C++入门</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgd223c2e" class="outline-3">
-<h3 id="orgd223c2e"><span class="section-number-3">1.1</span> C++初识</h3>
+<div id="outline-container-orgc2af237" class="outline-3">
+<h3 id="orgc2af237"><span class="section-number-3">1.1</span> C++初识</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orga6c0734" class="outline-4">
-<h4 id="orga6c0734"><span class="section-number-4">1.1.1</span> 常量</h4>
+<div id="outline-container-orgbe4b6ee" class="outline-4">
+<h4 id="orgbe4b6ee"><span class="section-number-4">1.1.1</span> 常量</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 有两种定义方式
@@ -312,15 +331,15 @@ const修饰的变量也称为常量
 </div>
 </div>
 </div>
-<div id="outline-container-org06cac0a" class="outline-3">
-<h3 id="org06cac0a"><span class="section-number-3">1.2</span> 数据类型</h3>
+<div id="outline-container-org49274e1" class="outline-3">
+<h3 id="org49274e1"><span class="section-number-3">1.2</span> 数据类型</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 为了给变量分配合适的内存空间
 </p>
 </div>
-<div id="outline-container-org2e027c3" class="outline-4">
-<h4 id="org2e027c3"><span class="section-number-4">1.2.1</span> 整型:表示整数类型,不同区别是占用的内存空间不同</h4>
+<div id="outline-container-org026d42c" class="outline-4">
+<h4 id="org026d42c"><span class="section-number-4">1.2.1</span> 整型:表示整数类型,不同区别是占用的内存空间不同</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -366,8 +385,8 @@ const修饰的变量也称为常量
 </table>
 </div>
 </div>
-<div id="outline-container-org66377ec" class="outline-4">
-<h4 id="org66377ec"><span class="section-number-4">1.2.2</span> sizeof关键字</h4>
+<div id="outline-container-org3dbbfbf" class="outline-4">
+<h4 id="org3dbbfbf"><span class="section-number-4">1.2.2</span> sizeof关键字</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <p>
 统计数据类型所占用的字节空间的大小
@@ -378,12 +397,290 @@ const修饰的变量也称为常量
 </p>
 </div>
 </div>
+<div id="outline-container-org9e96f90" class="outline-4">
+<h4 id="org9e96f90"><span class="section-number-4">1.2.3</span> 实型</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<ul class="org-ul">
+<li>单精度float</li>
+<li><p>
+双精度double
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">数据类型</td>
+<td class="org-right">占用空间</td>
+<td class="org-left">有效数字范围</td>
+</tr>
+
+<tr>
+<td class="org-left">float</td>
+<td class="org-right">4</td>
+<td class="org-left">7</td>
+</tr>
+
+<tr>
+<td class="org-left">double</td>
+<td class="org-right">8</td>
+<td class="org-left">15~16</td>
+</tr>
+</tbody>
+</table></li>
+<li>默认小数是double型</li>
+<li>默认情况输出一个小数会显示6位有效数字</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3ad6393" class="outline-4">
+<h4 id="org3ad6393"><span class="section-number-4">1.2.4</span> 字符型</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<ul class="org-ul">
+<li>字符型变量只有一个字符,占1个字节</li>
+<li>创建字符型变量用单引号</li>
+<li>重要的ASCLL值
+<ul class="org-ul">
+<li>a &rarr;     97</li>
+<li>A &rarr;    65</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3a0381f" class="outline-4">
+<h4 id="org3a0381f"><span class="section-number-4">1.2.5</span> 转义字符</h4>
+<div class="outline-text-4" id="text-1-2-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">转义字符</th>
+<th scope="col" class="org-left">含义</th>
+<th scope="col" class="org-right">ASCLL码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\a</td>
+<td class="org-left">警报</td>
+<td class="org-right">007</td>
+</tr>
+
+<tr>
+<td class="org-left">\b</td>
+<td class="org-left">退格</td>
+<td class="org-right">008</td>
+</tr>
+
+<tr>
+<td class="org-left">\f</td>
+<td class="org-left">换页</td>
+<td class="org-right">012</td>
+</tr>
+
+<tr>
+<td class="org-left">\n</td>
+<td class="org-left">换行</td>
+<td class="org-right">010</td>
+</tr>
+
+<tr>
+<td class="org-left">\r</td>
+<td class="org-left">回车</td>
+<td class="org-right">013</td>
+</tr>
+
+<tr>
+<td class="org-left">\t</td>
+<td class="org-left">水平制表</td>
+<td class="org-right">009</td>
+</tr>
+
+<tr>
+<td class="org-left">\v</td>
+<td class="org-left">垂直制表</td>
+<td class="org-right">011</td>
+</tr>
+
+<tr>
+<td class="org-left">\\</td>
+<td class="org-left">\</td>
+<td class="org-right">092</td>
+</tr>
+
+<tr>
+<td class="org-left">\'</td>
+<td class="org-left">'</td>
+<td class="org-right">039</td>
+</tr>
+
+<tr>
+<td class="org-left">\"</td>
+<td class="org-left">"</td>
+<td class="org-right">034</td>
+</tr>
+
+<tr>
+<td class="org-left">\?</td>
+<td class="org-left">?</td>
+<td class="org-right">063</td>
+</tr>
+
+<tr>
+<td class="org-left">\0</td>
+<td class="org-left">0</td>
+<td class="org-right">000</td>
+</tr>
+
+<tr>
+<td class="org-left">\ddd</td>
+<td class="org-left">8进制转义字符</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\xhh</td>
+<td class="org-left">16进制转义字符</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgdf84a22" class="outline-4">
+<h4 id="orgdf84a22"><span class="section-number-4">1.2.6</span> 字符串型</h4>
+<div class="outline-text-4" id="text-1-2-6">
+<ol class="org-ol">
+<li><p>
+一种风格
+</p>
+<ul class="org-ul">
+<li>等号后面要有双引号</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #78dce8;">char</span> <span style="color: #fcfcfa;">str</span><span style="color: #ff4500; font-weight: bold;">[]</span> = <span style="color: #ffd866;">"hello"</span>
+</pre>
+</div></li>
+<li><p>
+另一种分格
+</p>
+<ul class="org-ul">
+<li>要包含头文件</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #ab9df2;">#include</span> <span style="color: #ff4500; font-weight: bold;">&lt;</span><span style="color: #ffd866;">string</span><span style="color: #ff4500; font-weight: bold;">&gt;</span>
+<span style="color: #78dce8;">string</span> <span style="color: #fcfcfa;">str2</span> = <span style="color: #ffd866;">"hello!"</span>
+</pre>
+</div></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4cf6cb4" class="outline-4">
+<h4 id="org4cf6cb4"><span class="section-number-4">1.2.7</span> 布尔类型 bool</h4>
+<div class="outline-text-4" id="text-1-2-7">
+<ul class="org-ul">
+<li>值
+<ul class="org-ul">
+<li>true</li>
+<li>false</li>
+</ul></li>
+<li>只占一个字节内存</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbacade5" class="outline-4">
+<h4 id="orgbacade5"><span class="section-number-4">1.2.8</span> 数据输入</h4>
+<div class="outline-text-4" id="text-1-2-8">
+<ul class="org-ul">
+<li>关键字:cin</li>
+<li>语法 : <code>cin &lt;&lt;</code></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga61eeba" class="outline-3">
+<h3 id="orga61eeba"><span class="section-number-3">1.3</span> 运算符</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-orgcb7ddb6" class="outline-4">
+<h4 id="orgcb7ddb6"><span class="section-number-4">1.3.1</span> 算术</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
+<li>两个整型相除是整型</li>
+<li>只要除中有一个浮点型,那结果就是浮点型</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0ae6120" class="outline-4">
+<h4 id="org0ae6120"><span class="section-number-4">1.3.2</span> 赋值运算符</h4>
+</div>
+<div id="outline-container-org4046c7b" class="outline-4">
+<h4 id="org4046c7b"><span class="section-number-4">1.3.3</span> 比较运算符</h4>
+</div>
+<div id="outline-container-orga44ad6e" class="outline-4">
+<h4 id="orga44ad6e"><span class="section-number-4">1.3.4</span> 逻辑运算符</h4>
+</div>
+</div>
+<div id="outline-container-orgd63f307" class="outline-3">
+<h3 id="orgd63f307"><span class="section-number-3">1.4</span> 程序流程结构</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-org99fea5d" class="outline-4">
+<h4 id="org99fea5d"><span class="section-number-4">1.4.1</span> 选择结构</h4>
+<div class="outline-text-4" id="text-1-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5cd754f"></a>三目运算符<br />
+<div class="outline-text-5" id="text-1-4-1-1">
+<p>
+语法: <code>表达式1 ? 表达式2 :表达式3</code>
+</p>
+
+<p>
+解释:表达式1真,执行表达式2,否则执行表达式3
+</p>
+
+<p>
+三目运算符返回的是变量
+</p>
+</div>
+</li>
+<li><a id="orge9ccb82"></a>switch<br />
+<div class="outline-text-5" id="text-1-4-1-2">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #ff6188;">switch</span><span style="color: #ff4500; font-weight: bold;">(</span>score<span style="color: #ff4500; font-weight: bold;">)</span>
+<span style="color: #ff4500; font-weight: bold;">{</span>
+<span style="color: #ff6188;">case</span>:bala<span style="color: #ffd700; font-weight: bold;">{}</span> <span style="color: #ff6188;">break</span>;
+<span style="color: #ff6188;">case</span>:bals<span style="color: #ffd700; font-weight: bold;">{}</span> <span style="color: #ff6188;">break</span>;
+<span style="color: #ab9df2;">defult</span>: bala<span style="color: #ffd700; font-weight: bold;">{}</span><span style="color: #ff6188;">break</span>;
+<span style="color: #ff4500; font-weight: bold;">}</span>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: FAN</p>
-<p class="date">Created: 2021-03-22 一 23:13</p>
+<p class="date">Created: 2021-03-23 二 22:57</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
